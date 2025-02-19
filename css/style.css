@@ -1,0 +1,239 @@
+/* RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif; /* Bruker riktig font */
+    background-color: white; /* Standard bakgrunn for hele siden */
+    color: #333; /* Generell tekstfarge, kan overstyres for spesifikke seksjoner */
+    line-height: 1.6; /* Bra for lesbarhet */
+    margin: 0; /* Fjerner default margin */
+    padding: 0; /* Fjerner default padding */
+}
+
+/* HEADER-STYLING */
+header {
+    display: flex; /* Bruker Flexbox for å plassere elementene på en linje */
+    justify-content: space-between; /* Fordeler elementene med maks avstand mellom dem */
+    align-items: center; /* Sentrerer elementene vertikalt */
+    background-color: #1F2937; /* Setter bakgrunnsfargen til mørk blågrå */
+    padding: 20px 100px; /* Legger til mellomrom rundt innholdet i headeren */
+}
+
+/* LOGO-STYLING */
+.logo {
+    font-size: 24px; /* Setter fontstørrelsen til 24px */
+    font-weight: bold; /* Gjør teksten fet */
+    color: #F9FAF8; /* Setter tekstfargen til hvit */
+}
+
+/* NAVIGASJONSMENY */
+.nav-links {
+    display: flex; /* Bruker Flexbox for å plassere lenkene på en linje */
+    list-style: none; /* Fjerner standard punktmarkeringer fra listen */
+    gap: 20px; /* Legger til mellomrom mellom lenkene */
+}
+
+/* NAVIGASJONSLENKER */
+.nav-links a {
+    text-decoration: none; /* Fjerner understrek på lenker */
+    color: #E5E7EB; /* Setter tekstfargen til lys grå */
+    font-size: 18px; /* Setter fontstørrelsen til 18px */
+}
+
+
+/* HERO-SEKSJON */
+.hero {
+    display: flex; /* Bruker Flexbox for å plassere tekst og bilde på samme linje */
+    justify-content: space-between; /* Plasserer elementene på hver sin side */
+    align-items: center; /* Sikrer at begge starter på samme høyde */
+    background-color: #1F2937; /* Setter bakgrunnsfargen til mørk blågrå */
+    color: #F9FAF8; /* Setter tekstfargen til hvit */
+    padding: 100px; /* Gir rom rundt innholdet */
+    height: 400px; /* Sikrer at hero-seksjonen får en fast høyde */
+}
+
+/* TEKST I HERO-SEKSJONEN */
+.hero-text {
+    max-width: 50%; /* Begrenser bredden på teksten til 50% av foreldreelementet */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Hindrer at teksten blir sentrert vertikalt */
+}
+
+/* HOVEDTITTEL */
+.hero-text h2 {
+    font-size: 48px; /* Setter fontstørrelsen til 48px */
+    font-weight: 900; /* Gjør teksten ekstra fet */
+    margin: 0; /* Fjerner uønsket margin */
+    padding-bottom: 10px; /* Justerer mellomrom under overskriften */
+    line-height: 1.1; /* Reduserer linjeavstanden */
+}
+
+/* UNDERTEKST I HERO-SEKSJONEN */
+.hero-text p {
+    font-size: 18px; /* Setter fontstørrelsen til 18px */
+    color: #E5E7EB; /* Setter tekstfargen til lys grå */
+    margin-bottom: 20px; /* Legger til mellomrom under avsnittet */
+}
+
+/* SIGN UP-KNAPP */
+.hero-text button {
+    background-color: #3882F6; /* Setter bakgrunnsfargen til blå */
+    color: white; /* Setter tekstfargen til hvit */
+    padding: 10px 20px; /* Gir litt luft inni knappen */
+    border: none; /* Fjerner kantlinjen */
+    border-radius: 5px; /* Gjør knappens hjørner avrundet */
+    font-size: 18px; /* Setter fontstørrelsen til 18px */
+    cursor: pointer; /* Endrer musepekeren til en hånd når man holder over */
+    align-self: flex-start; /* Hindrer at knappen strekker seg utover */
+}
+
+/* BILDEPLASSHOLDER */
+.hero-image {
+    width: 400px; /* Setter en fast bredde */
+    height: 100%; /* Gjør at bildeplassen fyller høyden av hero-seksjonen */
+    display: flex; /* Gjør det mulig å sentrere teksten i bildet */
+    justify-content: center; /* Sentrerer innholdet horisontalt */
+    align-items: center; /* Sentrerer innholdet vertikalt */
+    background-color: gray; /* Midlertidig bakgrunnsfarge */
+    color: white; /* Setter tekstfargen til hvit */
+}
+
+
+
+/* INFORMASJONSSEKSJON */
+.info {
+    text-align: center; /* Sentrerer teksten i denne seksjonen */
+    padding: 50px 100px; /* Gir luft rundt innholdet */
+}
+
+/* OVERSKRIFTEN I INFORMASJONSSEKSJONEN */
+.info h2 {
+    font-size: 36px; /* Setter fontstørrelsen til 36px */
+    font-weight: 900; /* Gjør teksten fet */
+    color: #1F2937; /* Mørk blågrå farge, som angitt i designet */
+    margin-bottom: 40px; /* Gir mellomrom under overskriften */
+}
+
+/* FLEXBOX FOR BOKSENE */
+.info-boxes {
+    display: flex; /* Bruker Flexbox for å plassere boksene på en linje */
+    justify-content: center; /* Sentrerer boksene */
+    gap: 40px; /* Legger mellomrom mellom boksene */
+}
+
+/* HVERT INFO-ITEM (BOKS) */
+.info-item {
+    display: flex;
+    flex-direction: column; /* Sørger for at bildet og teksten ligger under hverandre */
+    align-items: center; /* Sentrerer innholdet */
+    width: 150px; /* Setter fast bredde på hver boks */
+}
+
+/* PLASSHOLDER FOR BILDER */
+.info-image {
+    width: 150px; /* Setter bredden på bildet */
+    height: 150px; /* Setter høyden på bildet */
+    border: 3px solid #3882F6; /* Setter en blå kant rundt bildet */
+    border-radius: 10px; /* Gjør hjørnene litt avrundet */
+}
+
+/* TEKSTEN UNDER BILDENE */
+.info-item p {
+    margin-top: 10px; /* Legger til litt luft over teksten */
+    font-size: 14px; /* Setter en litt mindre fontstørrelse */
+    color: #1F2937; /* Setter fargen til mørk blågrå */
+}
+
+
+
+/* SITATSSEKSJON */
+.quote {
+    background-color: #E5E7EB; /* Lys grå bakgrunn */
+    padding: 80px 150px; /* Gir luft rundt sitatet */
+    display: flex;
+    justify-content: center; /* Sentrerer innholdet horisontalt */
+    align-items: center; /* Sentrerer innholdet vertikalt */
+}
+
+/* SELVE SITATET */
+.quote blockquote {
+    font-size: 36px; /* Setter størrelsen på sitatet */
+    font-style: italic; /* Gjør teksten kursiv */
+    font-weight: 300; /* Setter en lettere fontvekt */
+    color: #1F2937; /* Mørk blågrå tekst */
+    max-width: 800px; /* Begrens bredde for bedre lesbarhet */
+    text-align: center; /* Sentrerer teksten */
+}
+
+/* SITATETS FORFATTER */
+.quote footer {
+    font-weight: bold; /* Gjør forfatterens navn fet */
+    text-align: right; /* Plasserer navnet til høyre */
+    margin-top: 10px; /* Gir mellomrom over navnet */
+    color: #1F2937; /* Endrer tekstfargen til mørk blågrå */
+    background-color: transparent; /* Sørger for at bakgrunnen matcher resten av seksjonen */
+}
+
+
+/* CALL TO ACTION-SEKSJON */
+.cta {
+    background-color: #3882F6; /* Blå bakgrunn */
+    padding: 40px 80px; /* Luft rundt innholdet */
+    margin: 50px auto; /* Sentraliserer seksjonen */
+    max-width: 900px; /* Begrenser bredden */
+    border-radius: 10px; /* Runde hjørner */
+}
+
+/* Bruker Flexbox på innholdet inni CTA */
+.cta-content {
+    display: flex; /* Plasserer tekst og knapp på samme linje */
+    justify-content: space-between; /* Tekst til venstre, knapp til høyre */
+    align-items: center; /* Sentrerer innholdet vertikalt */
+    gap: 20px; /* Litt mellomrom mellom tekst og knapp */
+}
+
+/* CTA-Teksten */
+.cta-text {
+    flex-grow: 1; /* Lar teksten fylle mest mulig av plassen */
+    color: white;
+}
+
+/* CTA-Knappen */
+.cta-button {
+    flex-shrink: 0; /* Hindrer knappen i å krympe */
+}
+
+.cta-button button {
+    background-color: transparent; /* Gjør bakgrunnen gjennomsiktig */
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* KNAPPENS HOVER-EFFEKT */
+.cta-button button:hover {
+    background-color: white;
+    color: #3882F6;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1F2937; /* Samme mørke farge som header */
+    color: #E5E7EB; /* Lys grå tekst */
+    text-align: center; /* Sentrerer teksten */
+    padding: 30px; /* Luft rundt teksten */
+    font-size: 14px; /* Justerer skriftstørrelsen */
+}
+
